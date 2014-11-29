@@ -1,4 +1,5 @@
-autohotkey-scripts
+AutoHotkey scripts
 ==================
 
-An assorted collection of AutoHotkey scripts that I wrote..
+- Universal autoscroll: Enable middle-mouse button autoscrolling in any application
+- Window groups: Bind groups of windows to hotkeys so you can easily minimize/restore them
