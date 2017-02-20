@@ -2,7 +2,7 @@
  * Universal autoscroll - alternative
  * (uses the Click command instead of PostMessage to scroll)
  *
- * AutoHotkey script that lets you scroll both vertically and horizontally 
+ * AutoHotkey script that lets you scroll (vertically) 
  * by holding the middle mouse-button. The vector from the initial cursor location
  * (when you started holding the button) to your current location determines 
  * the scrolling speed and direction.
