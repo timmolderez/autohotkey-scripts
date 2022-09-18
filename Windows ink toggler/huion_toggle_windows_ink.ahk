@@ -12,12 +12,14 @@ Hotkey, #+I , ToggleWindowsInk ; Win+Shift+I
 
 ToggleWindowsInk()
 {
+  HuionWindowTitle := "Huion Tablet"
   BlockInput, On
   Send, ^!h ; Ctrl+Alt+H opens the Huion application
-  WinWaitActive, Huion Tablet,,1
+  WinWait, %HuionWindowTitle%,,1
+  WinActivate, %HuionWindowTitle%
   Click, 261 41 ; "Digital pen" button
   Click, 81 103 ; "Press key" button
   Click, 67 737 ; "Enable Windows Ink" checkbox
-  Send, !{f4} ; Close the Hiuon application
+  WinClose, %HuionWindowTitle%
   BlockInput, Off
 }
