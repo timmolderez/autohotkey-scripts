@@ -3,9 +3,10 @@
 ;
 
 SetWorkingDir %A_ScriptDir% ; Use this script's location as working directory
-SetKeyDelay, 15 ; Wait a couple ms between each key press, for consistent results
-SetMouseDelay, 15 ; Wait a couple ms between each click
+SetKeyDelay, 10 ; Wait a couple ms between each key press, for consistent results
+SetMouseDelay, 10 ; Wait a couple ms between each click
 CoordMode, Mouse, Relative ; All given mouse coordinates are relative to the active window
+SetDefaultMouseSpeed, 0 ; Mouse commands will immediately jump the cursor to the target location
 
 Menu, Tray, Icon, ink_toggler.ico
 Hotkey, #+I , ToggleWindowsInk ; Win+Shift+I
